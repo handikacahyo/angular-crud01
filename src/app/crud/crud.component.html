@@ -1,0 +1,23 @@
+<form (submit)="addData()" class="example-form" [formGroup]="crudForm">
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input
+      matInput
+      placeholder="Ex. Pizza"
+      name="FoodName"
+      formControlName="foodName"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Leave a comment</mat-label>
+    <textarea
+      matInput
+      name="Comment"
+      formControlName="comment"
+      placeholder="Ex. It makes me feel..."
+    ></textarea>
+  </mat-form-field>
+
+  <button type="submit" mat-flat-button color="primary">Submit</button>
+</form>
